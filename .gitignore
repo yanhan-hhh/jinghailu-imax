@@ -1,0 +1,19 @@
+# 临时与中间文件
+_*.png
+_*.txt
+_*.ps1
+_*.js
+_pages/
+*.bak
+*.log
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+
+# 注意：dist/ 是发布目录，必须提交，不要忽略
