@@ -317,6 +317,529 @@ const MOVIES = [
     release: "6月25日", platform: "短剧平台",
     summary: "6月下旬短剧新上汇总剧目之一。",
     risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+
+  // ======================================================================
+  // ===== 历史回溯：2026 上半年（1.1–6.25）影视综报告 =====
+  // 来源《影视综·短剧·漫剧IP信息与上映节奏报告（2026.01.01-06.26）》
+  // 均为上半年已播/已映剧目，lastSeen 设为各自档期 → 自动归入经典厅·已归档
+  // ======================================================================
+
+  // ---- 国产剧·年度爆款梯队（评分8.0+）----
+  {
+    id: 32, firstSeen:"2026-01-23", lastSeen:"2026-02-28", title: "太平年", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["古装", "历史正剧"], hot: 95, rating: 8.5,
+    cast: "白宇、周雨彤、朱亚文、俞灏明、董勇", director: null,
+    ipFrom: null,
+    release: "1月23日首播", platform: "央视一套+爱奇艺+芒果TV+腾讯视频",
+    summary: "聚焦五代末北宋初年，「修士归来」的历史风云，历经十年筹划、五年打捞，用8K超高清技术拍摄，呈现历史人物超230位。白宇饰钱弘升、朱亚文饰赵匡胤、俞灏明饰郭荣，三人在国家板荡中命运纠葛。2026上半年最高分国产剧。",
+    hotDetail: "豆瓣8.4-8.5，约40集，2026上半年最高分国产剧",
+    risk: { level: "中风险", tags: ["低风险", "战争场面有冷兵器战斗·中风险"] }
+  },
+  {
+    id: 33, firstSeen:"2026-01-30", lastSeen:"2026-03-15", title: "生命树", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["环保", "悬疑", "现实题材"], hot: 88, rating: 8.3,
+    cast: "杨蓉、胡歌、李光洁", director: null,
+    ipFrom: null,
+    release: "1月30日首播", platform: "央视一套+爱奇艺",
+    summary: "在青海海拔4800米的雪域高原实景拍摄188天，讲述女警加入巡山队，与副县长冬未然共同打击盗猎团伙的故事。几乎每一集都在真境拍摄，人物鲜活、制作精良。",
+    risk: { level: "中风险", tags: ["有盗猎、暴力场景·中风险", "低风险"] }
+  },
+  {
+    id: 34, firstSeen:"2026-03-01", lastSeen:"2026-04-10", title: "危险关系", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["都市", "悬疑", "婚姻心理"], hot: 82, rating: 7.9,
+    cast: "孙俪、吴肇仁、王戈", director: null,
+    ipFrom: null,
+    release: "3月上线", platform: "爱奇艺",
+    summary: "聚焦「以爱为名」的精神操控（PUA），将互联网热词还原为真实可见的婚姻噩梦。吴肇仁饰演的罗姓男主被称为「近年国产剧最令人毛骨悚然的变态」，表面儒雅实则PUA教父。",
+    risk: { level: "低风险", tags: ["低风险", "心理惊悚·低风险"] }
+  },
+  {
+    id: 35, firstSeen:"2026-02-01", lastSeen:"2026-03-20", title: "低智商犯罪", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["犯罪", "喜剧", "悬疑"], hot: 80, rating: 8.1,
+    cast: "王骁、田曦薇、王传君", director: null,
+    ipFrom: null,
+    release: "2月上线", platform: "爱奇艺",
+    summary: "犯罪喜剧悬疑，一群「低智商」罪犯阴差阳错搅入大案的荒诞故事。",
+    risk: { level: "中风险", tags: ["低风险", "犯罪题材有轻量暴力·中风险"] }
+  },
+  {
+    id: 36, firstSeen:"2026-01-15", lastSeen:"2026-03-01", title: "主角", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["年代", "戏脉人生"], hot: 84, rating: 7.9,
+    cast: "刘浩存、秦海璐", director: "张艺谋",
+    ipFrom: "陈彦同名茅盾文学奖小说",
+    release: "上线", platform: "腾讯视频",
+    summary: "改编自陈彦茅奖小说，讲述秦腔名伶忆秦娥跌宕起伏的一生。张艺谋监制。",
+    hotDetail: "豆瓣7.9-8.0",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+
+  // ---- 国产剧·热搜热播大剧 ----
+  {
+    id: 37, firstSeen:"2026-02-15", lastSeen:"2026-04-01", title: "家业", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["古装", "女性创业", "非遗文化"], hot: 78, rating: 7.3,
+    cast: "杨紫、韩东君", director: null,
+    ipFrom: null,
+    release: "上线", platform: "爱奇艺",
+    summary: "聚焦「微雕」非遗文化，讲述李家小女夺嫡家族重创后，凭借制墨天赋再造辉煌的传奇故事。服化道精良，徽派建筑与制墨工艺呈现极具文化质感。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 38, firstSeen:"2026-03-06", lastSeen:"2026-04-15", title: "逐玉", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["古装", "爱情", "励志"], hot: 80, rating: null,
+    cast: "李兰迪、田嘉瑞", director: null,
+    ipFrom: null,
+    release: "3月6日首播", platform: "爱奇艺+腾讯视频+东方卫视",
+    summary: "屠户女樊长玉与落魄侯爷谢征风雪中宿命相遇，假婚真爱。开播第7天单日播放量破亿，全网播放量顺利突破6亿。",
+    hotDetail: "开播第三次破亿，全网播放量破6亿",
+    risk: { level: "低风险", tags: ["低风险", "古装战斗有轻量暴力·低风险"] }
+  },
+  {
+    id: 39, firstSeen:"2026-02-23", lastSeen:"2026-04-05", title: "除恶", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["缉毒", "刑侦"], hot: 79, rating: 7.3,
+    cast: "佟若汐、王骁、蔡文静、李泽锋", director: null,
+    ipFrom: null,
+    release: "2月23日首播（迷雾剧场）", platform: "爱奇艺迷雾剧场",
+    summary: "迷雾剧场2026开年力作，一袋失踪的新型毒品揭开海滨小镇平静表象下的暗流。16集短小精悍。",
+    risk: { level: "中风险", tags: ["缉毒题材有暴力场面·中风险", "低风险"] }
+  },
+  {
+    id: 40, firstSeen:"2026-01-10", lastSeen:"2026-02-25", title: "小城大事", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["年代", "基建题材"], hot: 75, rating: null,
+    cast: "赵丽颖、黄晓明", director: null,
+    ipFrom: null,
+    release: "1月10日首播", platform: "央视一套+腾讯视频",
+    summary: "1:1复刻80年代「月海镇」，讲述特区发展故事。赵丽颖黄晓明首次搭档年代剧。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 41, firstSeen:"2026-01-27", lastSeen:"2026-03-10", title: "骄阳似我", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["都市", "职场", "爱情"], hot: 74, rating: null,
+    cast: "宋威龙、赵今麦", director: null,
+    ipFrom: "顾漫小说改编",
+    release: "1月27日首播", platform: "浙江卫视",
+    summary: "顾漫小说改编，上线11天登顶猫眼热度周榜榜首。都市职场爱情。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 42, firstSeen:"2026-01-09", lastSeen:"2026-02-20", title: "轧戏", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["都市", "言情"], hot: 68, rating: null,
+    cast: "陈星旭、卢昱晓", director: null,
+    ipFrom: null,
+    release: "1月9日首播", platform: "东方卫视",
+    summary: "都市言情剧。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 43, firstSeen:"2026-01-29", lastSeen:"2026-03-05", title: "有罪", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["犯罪", "悬疑"], hot: 70, rating: null,
+    cast: "魏大勋、孙千、王龙正、高至霆、王真儿", director: null,
+    ipFrom: null,
+    release: "1月29日", platform: "爱奇艺",
+    summary: "一名老刑警、三位负罪而行的大学生、一个煤矿老板，因一宗命案在十八年后被搅到一起。跨越十八年的调查，将一桩案子背后隐藏的人性秘密揭开。",
+    risk: { level: "中风险", tags: ["犯罪题材有暴力凶杀·中风险", "低风险"] }
+  },
+  {
+    id: 44, firstSeen:"2026-01-01", lastSeen:"2026-02-10", title: "长河落日", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["谍战"], hot: 72, rating: null,
+    cast: "张鲁一", director: null,
+    ipFrom: null,
+    release: "1月1日首播", platform: "央视/卫视",
+    summary: "谍战剧，2026开年大剧。",
+    risk: { level: "中风险", tags: ["谍战有枪战场面·中风险", "低风险"] }
+  },
+  {
+    id: 45, firstSeen:"2026-01-05", lastSeen:"2026-02-15", title: "冬至", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["刑侦"], hot: 70, rating: null,
+    cast: "黄景瑜", director: null,
+    ipFrom: null,
+    release: "1月5日首播", platform: "卫视/网络",
+    summary: "刑侦悬疑剧。",
+    risk: { level: "中风险", tags: ["刑侦题材有凶案场面·中风险", "低风险"] }
+  },
+  {
+    id: 46, firstSeen:"2026-01-05", lastSeen:"2026-01-25", title: "奇迹", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["精品短剧集"], hot: 66, rating: null,
+    cast: "胡歌等", director: null,
+    ipFrom: null,
+    release: "1月5日首播", platform: "网络",
+    summary: "精品短剧集，胡歌主演。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 47, firstSeen:"2026-01-26", lastSeen:"2026-03-01", title: "女神蒙上眼", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["律政"], hot: 68, rating: null,
+    cast: "辛芷蕾", director: null,
+    ipFrom: null,
+    release: "1月26日首播", platform: "网络",
+    summary: "律政题材剧，辛芷蕾主演。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 48, firstSeen:"2026-01-29", lastSeen:"2026-03-01", title: "夜色正浓", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["商战"], hot: 67, rating: null,
+    cast: "江疏影", director: null,
+    ipFrom: null,
+    release: "1月29日首播", platform: "网络",
+    summary: "商战题材剧，江疏影主演。",
+    risk: { level: "中风险", tags: ["商战有冲突场面·中风险", "低风险"] }
+  },
+
+  // ---- 古装/仙侠/武侠 上新课 ----
+  {
+    id: 49, firstSeen:"2026-04-01", lastSeen:"2026-06-06", title: "雨霖铃", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["古装", "武侠"], hot: 72, rating: 7.0,
+    cast: "杨洋、章若楠、方逸伦", director: "侯鸿亮",
+    ipFrom: null,
+    release: "4月-6月6日收官", platform: "CCTV-8+优酷",
+    summary: "正午阳光出品，侯鸿亮制片。重塑中式侠义新内核，被赞为「中式美学武侠标杆」。",
+    risk: { level: "低风险", tags: ["武侠打斗有暴力·低风险", "低风险"] }
+  },
+  {
+    id: 50, firstSeen:"2026-04-01", lastSeen:"2026-05-15", title: "成何体统", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["古装", "喜剧"], hot: 70, rating: 7.2,
+    cast: "王楚然、丞磊", director: null,
+    ipFrom: null,
+    release: "4月上线", platform: "网络",
+    summary: "古装喜剧。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 51, firstSeen:"2026-04-01", lastSeen:"2026-05-20", title: "佳偶天成", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["古装", "奇幻", "爱情"], hot: 71, rating: null,
+    cast: "任嘉伦、王鹤润", director: null,
+    ipFrom: null,
+    release: "4月上线", platform: "网络",
+    summary: "身负「五不全」诅咒的战鬼陆千乔需换皮换肉换骨换心，与修仙者辛湄结为夫妻。古装奇幻爱情。",
+    risk: { level: "低风险", tags: ["奇幻战斗有轻量暴力·低风险", "低风险"] }
+  },
+  {
+    id: 52, firstSeen:"2026-04-01", lastSeen:"2026-05-10", title: "月鳞绮纪", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["古装", "奇幻"], hot: 69, rating: null,
+    cast: "鞠婧祎、曾舜晞、陈都灵", director: null,
+    ipFrom: null,
+    release: "4月1日", platform: "网络",
+    summary: "古装奇幻剧。",
+    risk: { level: "中风险", tags: ["有男男女女CP暗示·中风险", "低风险"] }
+  },
+  {
+    id: 53, firstSeen:"2026-03-28", lastSeen:"2026-05-10", title: "白日提灯", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["古装", "奇幻", "爱情"], hot: 70, rating: null,
+    cast: "迪丽热巴等", director: null,
+    ipFrom: null,
+    release: "3月28日", platform: "网络",
+    summary: "古装奇幻爱情剧。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 54, firstSeen:"2026-04-02", lastSeen:"2026-05-15", title: "惜花正", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["古装", "女性逆袭"], hot: 66, rating: null,
+    cast: "张婧仪、胡一天", director: null,
+    ipFrom: null,
+    release: "4月2日首播", platform: "网络",
+    summary: "古装女性逆袭剧。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 55, firstSeen:"2026-04-01", lastSeen:"2026-05-20", title: "八千里路风和云", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["年代"], hot: 65, rating: null,
+    cast: null, director: null,
+    ipFrom: null,
+    release: "4月上线", platform: "网络",
+    summary: "年代剧。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 56, firstSeen:"2026-05-02", lastSeen:"2026-06-01", title: "一世狂枭", media: "国产剧", hall: "classic", status: "已完结",
+    genre: ["古装", "网络剧"], hot: 60, rating: null,
+    cast: null, director: null,
+    ipFrom: null,
+    release: "5月2日", platform: "网络",
+    summary: "古装网络短剧集。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+
+  // ---- 海外剧·韩剧 ----
+  {
+    id: 57, firstSeen:"2026-01-16", lastSeen:"2026-03-01", title: "爱情怎么翻译", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["爱情", "喜剧"], hot: 75, rating: 8.3,
+    cast: "金宣虎、高允贞、福士苍汰", director: null,
+    ipFrom: null,
+    release: "1月16日上线", platform: "Netflix",
+    summary: "九尾狐变身人系的浪漫爱情喜剧。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 58, firstSeen:"2026-02-01", lastSeen:"2026-03-15", title: "夺命许愿", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["恐怖", "惊悚"], hot: 70, rating: 7.7,
+    cast: "全昭民、姜美娜、白晋浩", director: null,
+    ipFrom: null,
+    release: "上线", platform: "Netflix",
+    summary: "恐怖惊悚题材，8集短小精悍，全程剧情环环相扣、悬念重重。",
+    risk: { level: "中风险", tags: ["恐怖题材有惊悚画面·中风险", "低风险"] }
+  },
+  {
+    id: 59, firstSeen:"2026-01-15", lastSeen:"2026-03-01", title: "柔美的细胞小将 第三季", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["爱情", "动画真人"], hot: 68, rating: 8.7,
+    cast: "金高银、金载原等", director: null,
+    ipFrom: null,
+    release: "上线", platform: "Netflix/Tving",
+    summary: "高人气恋爱动画真人剧第三季。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 60, firstSeen:"2026-02-01", lastSeen:"2026-03-20", title: "卧底洪小姐", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["动作", "喜剧"], hot: 67, rating: 7.8,
+    cast: "朴信惠、高庚杓", director: null,
+    ipFrom: null,
+    release: "上线", platform: "韩剧",
+    summary: "卧底题材动作喜剧。",
+    risk: { level: "中风险", tags: ["谍战有部分动作场面·中风险", "低风险"] }
+  },
+  {
+    id: 61, firstSeen:"2026-02-01", lastSeen:"2026-03-15", title: "我的王室死对头", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["爱情", "宫廷"], hot: 66, rating: 7.8,
+    cast: "林智妍等", director: null,
+    ipFrom: null,
+    release: "上线", platform: "韩剧",
+    summary: "王室宫廷爱情剧。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 62, firstSeen:"2026-03-01", lastSeen:"2026-04-15", title: "21世纪大君夫人", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["穿越", "爱情"], hot: 70, rating: null,
+    cast: "IU（李知恩）、边佑锡、鲁尚炫", director: null,
+    ipFrom: null,
+    release: "上线", platform: "韩剧",
+    summary: "21世纪立志成为背景的财阀女性与王之子身份逆转罗曼史。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+
+  // ---- 海外剧·美剧 ----
+  {
+    id: 63, firstSeen:"2026-01-18", lastSeen:"2026-03-01", title: "七王国的骑士", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["奇幻史诗"], hot: 80, rating: null,
+    cast: null, director: null,
+    ipFrom: "乔治·R·R·马丁《权游》衍生",
+    release: "1月18日开播", platform: "HBO Max",
+    summary: "《权游》一部前传，更像「武侠公路片」，没有龙和魔法的狂轰滥炸，更纯粹的骑士精神。",
+    risk: { level: "中风险", tags: ["冷兵器战斗场面·中风险", "低风险"] }
+  },
+  {
+    id: 64, firstSeen:"2026-01-08", lastSeen:"2026-02-20", title: "梦魇绝镇 第四季", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["恐怖", "惊悚"], hot: 68, rating: null,
+    cast: null, director: null,
+    ipFrom: null,
+    release: "上线", platform: "美剧",
+    summary: "恐怖惊悚剧第四季。",
+    risk: { level: "高风险", tags: ["恐怖惊悚·高风险", "低风险"] }
+  },
+  {
+    id: 65, firstSeen:"2026-01-01", lastSeen:"2026-02-15", title: "辐射 第二季", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["废土", "科幻"], hot: 78, rating: null,
+    cast: null, director: null,
+    ipFrom: "游戏《辐射》改编",
+    release: "上线", platform: "Prime Video",
+    summary: "人气游戏改编废土科幻剧第二季。",
+    risk: { level: "高风险", tags: ["废土暴力·高风险", "低风险"] }
+  },
+  {
+    id: 66, firstSeen:"2026-01-08", lastSeen:"2026-02-20", title: "匹兹堡医护前线 第二季", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["医疗"], hot: 66, rating: null,
+    cast: null, director: null,
+    ipFrom: null,
+    release: "1月8日", platform: "美剧",
+    summary: "医疗题材剧第二季。",
+    risk: { level: "低风险", tags: ["医疗场景·低风险", "低风险"] }
+  },
+  {
+    id: 67, firstSeen:"2026-01-01", lastSeen:"2026-02-15", title: "暗影蜘蛛侠 第一季", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["超级英雄", "动画"], hot: 70, rating: null,
+    cast: null, director: null,
+    ipFrom: "漫威IP",
+    release: "上线", platform: "Disney+",
+    summary: "漫威蜘蛛侠衍生动画剧第一季。",
+    risk: { level: "高风险", tags: ["动作场面·高风险", "低风险"] }
+  },
+
+  // ---- 日剧 ----
+  {
+    id: 68, firstSeen:"2026-01-01", lastSeen:"2026-03-01", title: "危险又甜蜜", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["爱情", "BL"], hot: 64, rating: null,
+    cast: "和泉佳菟、元之介", director: null,
+    ipFrom: null,
+    release: "春季黑马", platform: "日剧",
+    summary: "高甜带感的剧系浪漫日剧。",
+    risk: { level: "中风险", tags: ["涉及BL元素·中风险", "低风险"] }
+  },
+  {
+    id: 69, firstSeen:"2026-01-01", lastSeen:"2026-03-01", title: "伪装的真实之吻", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["爱情", "BL"], hot: 62, rating: null,
+    cast: "鸣海登、佐藤友佑", director: null,
+    ipFrom: "改编自末广マチ超人气漫画",
+    release: "上线", platform: "日剧",
+    summary: "改编自超人气漫画，宿敌变恋人。",
+    risk: { level: "中风险", tags: ["涉及BL元素·中风险", "低风险"] }
+  },
+
+  // ---- 院线电影·春节档及上半年 ----
+  {
+    id: 70, firstSeen:"2026-02-17", lastSeen:"2026-04-01", title: "封神第二部：战火西岐", media: "院线电影", hall: "classic", status: "已下映",
+    genre: ["神话史诗"], hot: 96, rating: null,
+    cast: null, director: "乌尔善",
+    ipFrom: "封神宇宙",
+    release: "2月17日大年初一", platform: "全国院线",
+    summary: "春节档六部大片「神仙打架」，年度票房突破157亿元。封神宇宙第二部，战火西岐。",
+    hotDetail: "春节档总票房157亿元，年度爆款",
+    risk: { level: "中风险", tags: ["战争场面·中风险", "低风险"] }
+  },
+  {
+    id: 71, firstSeen:"2026-02-17", lastSeen:"2026-04-01", title: "哪吒之魔童闹海", media: "院线电影", hall: "classic", status: "已下映",
+    genre: ["动画"], hot: 99, rating: null,
+    cast: null, director: null,
+    ipFrom: "哪吒IP",
+    release: "2月17日大年初一", platform: "光线传媒/全国院线",
+    summary: "春节档动画爆款，哪吒IP续作。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 72, firstSeen:"2026-02-17", lastSeen:"2026-04-01", title: "飞驰人生3", media: "院线电影", hall: "classic", status: "已下映",
+    genre: ["喜剧", "运动"], hot: 88, rating: null,
+    cast: "韩寒、沈腾", director: "韩寒",
+    ipFrom: "IP续作",
+    release: "2月17日大年初一", platform: "全国院线",
+    summary: "韩寒赛车喜剧IP续作。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 73, firstSeen:"2026-02-17", lastSeen:"2026-04-01", title: "唐探1900", media: "院线电影", hall: "classic", status: "已下映",
+    genre: ["悬疑", "喜剧"], hot: 90, rating: null,
+    cast: "陈思诚、王宝强、刘昊", director: "陈思诚",
+    ipFrom: "唐探IP",
+    release: "2月17日大年初一", platform: "全国院线",
+    summary: "唐人街探案系列电影，1900年代背景悬疑喜剧。",
+    risk: { level: "中风险", tags: ["悬疑凶案·中风险", "低风险"] }
+  },
+  {
+    id: 74, firstSeen:"2026-02-17", lastSeen:"2026-04-01", title: "蛟龙行动", media: "院线电影", hall: "classic", status: "已下映",
+    genre: ["军事动作"], hot: 82, rating: null,
+    cast: null, director: "林超贤",
+    ipFrom: "主旋律",
+    release: "2月17日大年初一", platform: "全国院线",
+    summary: "林超贤执导军事动作大片。",
+    risk: { level: "中风险", tags: ["军事战斗场面·中风险", "低风险"] }
+  },
+  {
+    id: 75, firstSeen:"2026-02-17", lastSeen:"2026-04-01", title: "射雕英雄传：侠之大者", media: "院线电影", hall: "classic", status: "已下映",
+    genre: ["武侠"], hot: 80, rating: null,
+    cast: "肖战、庄达菲", director: null,
+    ipFrom: "金庸IP",
+    release: "2月17日大年初一", platform: "全国院线",
+    summary: "金庸武侠IP电影改编。",
+    risk: { level: "中风险", tags: ["武侠打斗·中风险", "低风险"] }
+  },
+  {
+    id: 76, firstSeen:"2026-01-01", lastSeen:"2026-02-10", title: "过家家", media: "院线电影", hall: "classic", status: "已下映",
+    genre: ["家庭", "温情"], hot: 70, rating: null,
+    cast: "成龙、彭昱畅、张佳宁", director: null,
+    ipFrom: null,
+    release: "1月1日元旦档", platform: "全国院线",
+    summary: "元旦档家庭温情喜剧片。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 77, firstSeen:"2026-05-01", lastSeen:"2026-06-01", title: "消失的她们", media: "院线电影", hall: "classic", status: "已下映",
+    genre: ["悬疑", "犯罪"], hot: 78, rating: null,
+    cast: null, director: null,
+    ipFrom: null,
+    release: "五一档", platform: "全国院线",
+    summary: "五一档悬疑犯罪片，票房破亿。",
+    risk: { level: "中风险", tags: ["悬疑犯罪·中风险", "低风险"] }
+  },
+
+  // ---- 国漫/番剧 ----
+  {
+    id: 78, firstSeen:"2026-01-01", lastSeen:"2026-06-25", title: "沧元图", media: "国漫番剧", hall: "classic", status: "制作中",
+    genre: ["玄幻", "国漫"], hot: 75, rating: null,
+    cast: null, director: null,
+    ipFrom: "我吃西红柿同名小说",
+    release: "第三季制作中，院线电影已立项（2026年4月）", platform: "优酷",
+    summary: "我吃西红柿经典IP，第三季在制作中，院线电影已立项备案，真人影视化正式启动。",
+    risk: { level: "中风险", tags: ["打斗场面·中风险", "低风险"] }
+  },
+  {
+    id: 79, firstSeen:"2026-01-01", lastSeen:"2026-06-25", title: "剑来 第二季", media: "国漫番剧", hall: "classic", status: "连载中",
+    genre: ["仙侠", "国漫"], hot: 76, rating: null,
+    cast: null, director: null,
+    ipFrom: "烽火戏诸侯IP",
+    release: "持续更新中", platform: "国漫平台",
+    summary: "烽火戏诸侯人气仙侠IP动画第二季，持续更新中。",
+    risk: { level: "低风险", tags: ["打斗场面·低风险", "低风险"] }
+  },
+  {
+    id: 80, firstSeen:"2026-06-01", lastSeen:"2026-06-25", title: "斩神之凡尘神域II", media: "国漫番剧", hall: "classic", status: "连载中",
+    genre: ["热血", "国漫"], hot: 74, rating: null,
+    cast: null, director: null,
+    ipFrom: null,
+    release: "6月首播", platform: "国漫平台",
+    summary: "热血国漫第二季，6月首播。",
+    risk: { level: "中风险", tags: ["热血战斗·中风险", "低风险"] }
+  },
+  {
+    id: 81, firstSeen:"2026-01-16", lastSeen:"2026-06-25", title: "葬送的芙莉莲 第二季", media: "国漫番剧", hall: "classic", status: "连载中",
+    genre: ["日本动画", "奇幻"], hot: 90, rating: null,
+    cast: null, director: null,
+    ipFrom: null,
+    release: "1月16日开播（黄金光番）", platform: "B站等",
+    summary: "高人气奇幻番剧第二季，1月黄金档开播。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 82, firstSeen:"2026-06-01", lastSeen:"2026-06-25", title: "咒术回战 第三季", media: "国漫番剧", hall: "classic", status: "制作中",
+    genre: ["日本动画", "热血战斗"], hot: 88, rating: null,
+    cast: null, director: null,
+    ipFrom: null,
+    release: "制作中", platform: "B站等",
+    summary: "人气热血战斗番第三季，制作中。",
+    risk: { level: "高风险", tags: ["热血战斗有流血场面·高风险", "低风险"] }
+  },
+
+  // ---- 短剧/漫剧 ----
+  {
+    id: 83, firstSeen:"2026-03-01", lastSeen:"2026-05-01", title: "权宠4：权宠天下", media: "短剧漫剧", hall: "classic", status: "已完结",
+    genre: ["古装", "权谋", "短剧"], hot: 70, rating: null,
+    cast: "常喆宽×唐七七", director: null,
+    ipFrom: null,
+    release: "上线", platform: "短剧平台",
+    summary: "上半年火爆短剧IP「权宠」系列第四部，古装权谋。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 84, firstSeen:"2026-06-03", lastSeen:"2026-06-25", title: "夫人她专治不服4", media: "短剧漫剧", hall: "classic", status: "已完结",
+    genre: ["爽剧", "短剧"], hot: 65, rating: null,
+    cast: "李若彤、王培廷", director: null,
+    ipFrom: null,
+    release: "6月3日上线", platform: "短剧平台",
+    summary: "上半年火爆短剧IP「夫人她专治不服」系列第四部。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 85, firstSeen:"2026-01-01", lastSeen:"2026-05-01", title: "执手同谋不负卿", media: "短剧漫剧", hall: "classic", status: "已完结",
+    genre: ["古装", "言情", "短剧"], hot: 58, rating: null,
+    cast: "王培廷×姜十七", director: null,
+    ipFrom: null,
+    release: "上线", platform: "短剧平台",
+    summary: "上半年其他热门短剧之一。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+  {
+    id: 86, firstSeen:"2026-01-01", lastSeen:"2026-05-01", title: "砚知山河意", media: "短剧漫剧", hall: "classic", status: "已完结",
+    genre: ["古装", "言情", "短剧"], hot: 56, rating: null,
+    cast: "李卓扬×陈羽翎", director: null,
+    ipFrom: null,
+    release: "上线", platform: "短剧平台",
+    summary: "上半年其他热门短剧之一。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
   }
 ];
 
