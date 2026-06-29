@@ -153,18 +153,21 @@ function isUpcoming(m){
   return m.status.indexOf("即将")>=0 || m.status.indexOf("新上")>=0;
 }
 
-// 今日基准日期（每日更新时由 data.js 顶部的 TODAY 提供；缺省用真实今天）
-const TODAY = (typeof REPORT_DATE !== "undefined" && REPORT_DATE) ? REPORT_DATE : new Date().toISOString().slice(0,10);
-// 距今多少天没在报告中出现
+// 真实当天日期（访客打开网站的那天）——用于顶部"今日放映"展示
+const DISPLAY_DATE = new Date();
+// 数据基准日期 = 最新报告日期（data.js 顶部 REPORT_DATE）——用于归档/NEW 判断，
+// 这样无论访客哪天打开，归档逻辑都锚定在最近一次更新，不会因访问日漂移而误归档
+const DATA_DATE = (typeof REPORT_DATE !== "undefined" && REPORT_DATE) ? REPORT_DATE : new Date().toISOString().slice(0,10);
+// 距最新报告多少天没在报告中出现
 function daysSinceSeen(m){
   if(!m.lastSeen) return 0;
-  const a = new Date(m.lastSeen+"T00:00:00"), b = new Date(TODAY+"T00:00:00");
+  const a = new Date(m.lastSeen+"T00:00:00"), b = new Date(DATA_DATE+"T00:00:00");
   return Math.round((b-a)/86400000);
 }
 // 连续 3 天未上报告 → 视为已归档（仍保留，只在经典厅打标）
 function isArchived(m){ return daysSinceSeen(m) >= 3; }
-// 是否今日新增（首次收录就是今天）
-function isNew(m){ return m.firstSeen === TODAY && daysSinceSeen(m) === 0; }
+// 是否最新一批新增（firstSeen 等于最新报告日期）
+function isNew(m){ return m.firstSeen === DATA_DATE && daysSinceSeen(m) === 0; }
 
 // HTML 转义
 function esc(s){ return (s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
@@ -383,6 +386,13 @@ function applySearch(q){
 
 // ---- 初始化 ----
 function init(){
+  // 顶部日期：显示访客打开网站的真实当天日期
+  const d = DISPLAY_DATE;
+  const pad = n => String(n).padStart(2,"0");
+  const wd = ["日","一","二","三","四","五","六"][d.getDay()];
+  const chip = document.getElementById("datechip");
+  if(chip) chip.textContent = `${d.getFullYear()}.${pad(d.getMonth()+1)}.${pad(d.getDate())} 周${wd} · 今日放映`;
+
   // 头牌：选 today 标记中热度最高的，否则全场热度最高
   const todays = MOVIES.filter(m=>m.today);
   const pool = todays.length?todays:MOVIES;

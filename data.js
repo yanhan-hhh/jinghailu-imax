@@ -4,23 +4,23 @@
 // 媒介 media：国产剧 / 海外剧 / 院线电影 / 国漫番剧 / 短剧漫剧
 // status：热播中 / 上映中 / 连载中 / 即将开播 / 已完结 / 今日首发
 
-// 最新报告日期（每日更新时改这里。用作“今日”基准 → 决定 NEW 角标和归档判断）
-const REPORT_DATE = "2026-06-26";
+// 最新报告日期（每日更新时改这里。用作归档/NEW 判断的数据基准）
+const REPORT_DATE = "2026-06-29";
 
 const MOVIES = [
   // ============ 一、国内剧集 ============
   {
-    id: 1, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "南部档案", media: "国产剧", hall: "main", status: "热播中",
+    id: 1, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "南部档案", media: "国产剧", hall: "main", status: "热播中",
     genre: ["民国奇幻", "悬疑探案"], hot: 92, rating: null,
-    cast: "张新成、丁禹兮", director: null,
+    cast: "张新成、丁禹兮、姜珮瑶", director: null,
     ipFrom: "南派三叔《盗墓笔记》正统前传",
-    release: "6月12日上线", platform: "爱奇艺",
-    summary: "1916年南洋，围绕「水鬼乡」离奇命案展开。张新成饰张海盐（张家南部档案馆掌门人）、丁禹兮饰南怀舒（南洋第一白月光，绝技《南斗一刀》）。所有线索指向一桩凭空消失的案件「南安号」，涉及军阀生化阴谋与张家血脉秘密。",
+    release: "6月11日开播，6月23日提前点映大结局", platform: "爱奇艺",
+    summary: "1916年南洋，围绕「水鬼乡」离奇命案展开。张新成饰张海盐（张家南部档案馆掌门人）、丁禹兮饰南怀舒（南洋第一白月光，绝技《南斗一刀》）。所有线索指向一桩凭空消失的案件「南安号」，涉及军阀生化阴谋与张家血脉秘密。6月最强悬疑IP，预约量破250万，登顶云合榜。",
     guide: "B站多位UP主已产出大量解说视频，搜索「南部档案」即可找到",
     risk: { level: "中风险", tags: ["无同性恋情节·低风险", "悬疑凶杀场面有血腥成分·中风险"] }
   },
   {
-    id: 2, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "莫离", media: "国产剧", hall: "main", status: "热播中",
+    id: 2, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "莫离", media: "国产剧", hall: "main", status: "热播中",
     genre: ["古装", "爱情", "悬疑"], hot: 88, rating: null,
     cast: "白鹿、丞磊", director: null,
     ipFrom: "小说改编",
@@ -40,7 +40,7 @@ const MOVIES = [
     risk: { level: "低风险", tags: ["无同性恋情节·低风险", "犯罪题材无过度血腥·低风险"] }
   },
   {
-    id: 4, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "爱情有烟火", media: "国产剧", hall: "main", status: "热播中",
+    id: 4, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "爱情有烟火", media: "国产剧", hall: "main", status: "热播中",
     genre: ["都市", "轻喜爱情"], hot: 78, rating: null,
     cast: "檀健次、王皓然、李乃文、张昊唯、姜珮瑶", director: null,
     ipFrom: null,
@@ -50,7 +50,7 @@ const MOVIES = [
     risk: { level: "低风险", tags: ["无同性恋情节·低风险", "无血腥暴力·低风险"] }
   },
   {
-    id: 5, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "问心2", media: "国产剧", hall: "main", status: "热播中",
+    id: 5, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "问心2", media: "国产剧", hall: "main", status: "热播中",
     genre: ["剧情", "医疗"], hot: 80, rating: null,
     cast: "赵又廷、毛晓彤、金世佳、张佳宁、陈冲", director: null,
     ipFrom: null,
@@ -60,7 +60,7 @@ const MOVIES = [
     risk: { level: "低风险", tags: ["无同性恋情节·低风险", "无血腥暴力·低风险"] }
   },
   {
-    id: 6, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "云秀行", media: "国产剧", hall: "main", status: "今日首发", today: true,
+    id: 6, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "云秀行", media: "国产剧", hall: "main", status: "今日首发", today: true,
     genre: ["古装", "喜剧", "爱情"], hot: 85, rating: null,
     cast: "李一桐、曾舜晞、邓为、代露娃、王以纶", director: null,
     ipFrom: null,
@@ -70,7 +70,7 @@ const MOVIES = [
     risk: { level: "低风险", tags: ["无同性恋情节·低风险", "无血腥暴力·低风险"] }
   },
   {
-    id: 7, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "昨夜将至", media: "国产剧", hall: "main", status: "上映中",
+    id: 7, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "昨夜将至", media: "国产剧", hall: "main", status: "上映中",
     genre: ["悬疑"], hot: 72, rating: null,
     cast: null, director: null,
     ipFrom: null,
@@ -80,7 +80,7 @@ const MOVIES = [
     risk: { level: "中风险", tags: ["无同性恋情节·低风险", "悬疑题材可能有惊悚元素·中风险"] }
   },
   {
-    id: 8, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "江云镇谜案", media: "国产剧", hall: "main", status: "今日首发", today: true,
+    id: 8, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "江云镇谜案", media: "国产剧", hall: "main", status: "今日首发", today: true,
     genre: ["民国探案"], hot: 68, rating: null,
     cast: null, director: null,
     ipFrom: null,
@@ -92,7 +92,7 @@ const MOVIES = [
 
   // ============ 二、海外剧集 ============
   {
-    id: 9, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "铁拳教育", media: "海外剧", hall: "main", status: "全球爆款",
+    id: 9, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "铁拳教育", media: "海外剧", hall: "main", status: "全球爆款",
     genre: ["校园动作", "现实题材"], hot: 98, rating: 8.8,
     cast: "金试烈、李星民、秦基周、表志勋(P.O)", director: null,
     ipFrom: "改编自Naver超高人气网漫《Get Schooled》",
@@ -139,7 +139,7 @@ const MOVIES = [
     risk: { level: "中风险", tags: ["可能涉及敏感情节·中风险", "视具体内容待定·中风险"] }
   },
   {
-    id: 14, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "龙之家族 第三季", media: "海外剧", hall: "main", status: "热播中",
+    id: 14, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "龙之家族 第三季", media: "海外剧", hall: "main", status: "热播中",
     genre: ["奇幻史诗"], hot: 99, rating: null, mark: "House of the Dragon S3",
     cast: "马特·史密斯、艾玛·达西、奥利维亚·库克", director: null,
     ipFrom: "乔治·R·R·马丁《血与火》",
@@ -207,7 +207,7 @@ const MOVIES = [
     risk: { level: "低风险", tags: ["低风险", "奇幻有部分战斗画面·低风险"] }
   },
   {
-    id: 21, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "热血足球少年·英雄初升", media: "院线电影", hall: "chase", status: "即将上映",
+    id: 21, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "热血足球少年·英雄初升", media: "院线电影", hall: "chase", status: "即将上映",
     genre: ["体育竞技", "动画电影"], hot: 60, rating: null,
     cast: null, director: null,
     ipFrom: null,
@@ -676,7 +676,7 @@ const MOVIES = [
     id: 69, firstSeen:"2026-01-01", lastSeen:"2026-03-01", title: "伪装的真实之吻", media: "海外剧", hall: "classic", status: "已完结",
     genre: ["爱情", "BL"], hot: 62, rating: null,
     cast: "鸣海登、佐藤友佑", director: null,
-    ipFrom: "改编自末广マチ超人气漫画",
+    ipFrom: "改编自日本超人气同名漫画",
     release: "上线", platform: "日剧",
     summary: "改编自超人气漫画，宿敌变恋人。",
     risk: { level: "中风险", tags: ["涉及BL元素·中风险", "低风险"] }
@@ -839,6 +839,124 @@ const MOVIES = [
     ipFrom: null,
     release: "上线", platform: "短剧平台",
     summary: "上半年其他热门短剧之一。",
+    risk: { level: "低风险", tags: ["低风险", "低风险"] }
+  },
+
+  // ======================================================================
+  // ===== 增量更新：2026.06.27 - 06.29 三日日报新增 =====
+  // ======================================================================
+  {
+    id: 87, firstSeen:"2026-06-27", lastSeen:"2026-06-29", title: "俎楚", media: "国产剧", hall: "main", status: "热播中",
+    genre: ["古装", "权谋", "复仇"], hot: 84, rating: null,
+    cast: "陈都灵、周翊然、唐晓天、王瑞昌", director: null,
+    ipFrom: "希行《楚后》小说改编",
+    release: "6月2日开播", platform: "优酷+Netflix全球同步",
+    summary: "将军之女楚朝重生后誓不沦为权力棋局中的牺牲品，主动执棋、步步为营。联手前夫陆谢燕求（周翊然饰）扶持皇孙登基，从权力的棋子逆袭为执掌朝堂的镇国长公主。三集完成「被杀—重生」全流程。Netflix全球同步，进入37国日榜Top10。",
+    guide: "B站搜索《俎楚》解说",
+    risk: { level: "中风险", tags: ["少量朝堂斗争/战场镜头·中风险", "偏权谋基调·低风险"] }
+  },
+  {
+    id: 88, firstSeen:"2026-06-29", lastSeen:"2026-06-29", title: "灵魂摆渡·十年", media: "国产剧", hall: "main", status: "热播中",
+    genre: ["奇幻", "悬疑"], hot: 80, rating: null,
+    cast: "于毅、刘智扬、肖茵", director: null,
+    ipFrom: "《灵魂摆渡》经典IP",
+    release: "6月2日开播", platform: "爱奇艺",
+    summary: "《铁三角》全员回归，《灵魂摆渡》十年之约再续。444号便利店营业至深夜，赵吏夙的经典组合即将再现。融合中国传统神怪文化与现代都市叙事。",
+    guide: "B站搜索《灵魂摆渡 十年》",
+    risk: { level: "中风险", tags: ["包含超自然/灵异恐怖元素·中风险", "有少量血腥/恐怖画面·中风险"] }
+  },
+  {
+    id: 89, firstSeen:"2026-06-27", lastSeen:"2026-06-29", title: "酱园弄·悬案", media: "院线电影", hall: "main", status: "热映中",
+    genre: ["民国", "犯罪", "悬疑"], hot: 86, rating: null,
+    cast: "章子怡、王传君、易烊千玺、梅婷、赵丽颖、雷佳音、杨幂、大鹏、范伟等23位演员", director: "陈可辛",
+    ipFrom: "改编自1945年真实民国奇案「酱园弄杀夫案」",
+    release: "6月21日上映", platform: "全国院线",
+    summary: "陈可辛执导全明星阵容民国犯罪大片。改编自1945年真实民国奇案「酱园弄杀夫案」，詹周氏（章子怡饰）不堪丈夫家暴、杀夫碎尸，分尸案掀起轩然大波。一部群像式民国奇案大片。",
+    guide: "猫眼购票 | 全国院线热映",
+    risk: { level: "高风险", tags: ["杀夫碎尸/分尸案件·高风险", "含暴力及死亡画面·高风险"] }
+  },
+  {
+    id: 90, firstSeen:"2026-06-27", lastSeen:"2026-06-29", title: "黑袍纠察队 第四季", media: "海外剧", hall: "main", status: "热播中",
+    genre: ["超级英雄", "反英雄", "暗黑"], hot: 82, rating: null,
+    cast: "卡尔·厄本、安东尼·斯塔尔、艾林·莫里亚蒂", director: null,
+    ipFrom: "同名漫画IP",
+    release: "6月13日开播", platform: "Amazon Prime Video",
+    summary: "世界濒临毁灭，祖国人挟持权势一步步迈进白宫，黑暗时代只剩几个月。反超级英雄暗黑神作第四季。",
+    risk: { level: "高风险", tags: ["含LGBTQ+/角色元素·中风险", "极致血腥暴力、重口画面·高风险"] }
+  },
+  {
+    id: 91, firstSeen:"2026-06-28", lastSeen:"2026-06-29", title: "信号2", media: "海外剧", hall: "main", status: "热播中",
+    genre: ["悬疑", "犯罪", "穿越"], hot: 85, rating: null,
+    cast: "金惠秀、赵震雄、李帝勋", director: null,
+    ipFrom: "tvN十周年回归之作", mark: "Signal Season 2",
+    release: "tvN播出，海外同步", platform: "tvN",
+    summary: "时隔十年，作为tvN 20周年特别作品回归。用一支神秘对讲机连接过去与现在的悬疑犯罪剧。原班人马回归，韩国最强悬疑IP。",
+    risk: { level: "中风险", tags: ["悬疑案件涉及血腥暴力、杀人场面·中风险", "低风险"] }
+  },
+  {
+    id: 92, firstSeen:"2026-06-29", lastSeen:"2026-06-29", title: "韩国制造", media: "海外剧", hall: "chase", status: "即将开播",
+    genre: ["年代", "政治", "双雄"], hot: 78, rating: null,
+    cast: "玄彬、郑雨盛", director: null,
+    ipFrom: null, mark: "Made in Korea",
+    release: "预计2025-2026年上线", platform: "Disney+",
+    summary: "讲述1970年代韩国动荡时期，对财富和权力抱有野心的男人与信念坚定的正义检察官之间正邪两派对决，贯穿韩国近代史变革。700亿韩元超高制作费。",
+    risk: { level: "中风险", tags: ["含政治暴力/时代动荡/黑帮火并·中风险", "低风险"] }
+  },
+  {
+    id: 93, firstSeen:"2026-06-27", lastSeen:"2026-06-29", title: "熊家餐馆 第五季", media: "海外剧", hall: "classic", status: "已完结",
+    genre: ["剧情", "美食"], hot: 76, rating: null,
+    cast: "杰瑞米·艾伦·怀特等", director: null,
+    ipFrom: null,
+    release: "6月26/27日上线", platform: "Disney+/Hulu",
+    summary: "高人气美食剧最终季。后厨传奇的收官之作，卡米退出餐饮业团队被收购威胁，风暴来临前的最后服务。",
+    risk: { level: "低风险", tags: ["剧情为主，无暴力内容·低风险", "低风险"] }
+  },
+  {
+    id: 94, firstSeen:"2026-06-29", lastSeen:"2026-06-29", title: "攻壳机动队 新TV动画", media: "国漫番剧", hall: "chase", status: "即将开播",
+    genre: ["日本动画", "科幻", "赛博朋克"], hot: 80, rating: null,
+    cast: null, director: null,
+    ipFrom: "士郎正宗原作",
+    release: "2026年开播", platform: "Science SARU制作",
+    summary: "士郎正宗经典赛博朋克IP全新TV动画，由Science SARU制作。",
+    risk: { level: "中风险", tags: ["包含赛博朋克暴力/义体战斗·中风险", "政治暗杀场面·中风险"] }
+  },
+  {
+    id: 95, firstSeen:"2026-06-29", lastSeen:"2026-06-29", title: "蜘蛛侠：崭新之日", media: "院线电影", hall: "chase", status: "即将上映",
+    genre: ["超级英雄", "动作"], hot: 88, rating: null,
+    cast: "汤姆·霍兰德、赞达亚", director: null,
+    ipFrom: "漫威蜘蛛侠IP", mark: "Spider-Man: Brand New Day",
+    release: "2026年7月31日北美上映", platform: "全球院线",
+    summary: "汤姆·霍兰德回归，赞达亚饰演MJ。马克·鲁法洛（绿巨人）、惩罚者（乔·伯恩瑟）加盟。",
+    guide: "B站蜘蛛侠4预告",
+    risk: { level: "中风险", tags: ["超级英雄打斗场面/高楼坠落/爆炸·中风险", "PG-13级·低风险"] }
+  },
+  {
+    id: 96, firstSeen:"2026-06-29", lastSeen:"2026-06-29", title: "镖人：风起大漠", media: "院线电影", hall: "classic", status: "已下映",
+    genre: ["武侠", "动作", "国漫"], hot: 82, rating: null,
+    cast: "吴京、谢霆锋、于适、李连杰（时隔14年重返大银幕）", director: "袁和平",
+    ipFrom: "许先哲同名漫画《镖人》",
+    release: "2026年2月17日上映", platform: "全国院线",
+    summary: "改编自许先哲同名漫画《镖人》，大漠之上镖人、官府多方势力盘根错节。「天字第二号镖匠」刀马携手特殊押镖任务，从西域护镖远赴长安。隋末风云再起，国漫硬核武侠峰。",
+    guide: "B站预告 | 1905",
+    risk: { level: "高风险", tags: ["包含大量武侠打斗/冷兵器战斗/暴力场面·高风险", "硬核动作片·中风险"] }
+  },
+  {
+    id: 97, firstSeen:"2026-06-29", lastSeen:"2026-06-29", title: "超级少女", media: "院线电影", hall: "main", status: "热映中",
+    genre: ["超级英雄", "科幻"], hot: 78, rating: null,
+    cast: "米莉·乔沃科克、杰森·莫玛（暴揍）", director: null,
+    ipFrom: "DCU首部超人独立电影", mark: "Supergirl: Woman of Tomorrow",
+    release: "6月26日上映", platform: "全球院线",
+    summary: "DCU首部超人独立电影，全新宇宙开篇，不同于传统超人叙事。《龙之家族》杰森·莫玛参演。",
+    risk: { level: "中风险", tags: ["超级英雄宇宙大战/星际战斗/爆破·中风险", "PG-13·低风险"] }
+  },
+  {
+    id: 98, firstSeen:"2026-06-28", lastSeen:"2026-06-29", title: "朝思暮时", media: "短剧漫剧", hall: "main", status: "热播中",
+    genre: ["真人短剧", "都市"], hot: 75, rating: null,
+    cast: "锦子、王皓桢", director: null,
+    ipFrom: null,
+    release: "6月22日上线", platform: "抖音/快手等短剧平台",
+    summary: "6月22日爆款真人短剧，首日热度8663万（红果双榜榜首），近期唯一打爆AI剧的真人短剧。",
+    hotDetail: "首日热度8663万，红果双榜榜首",
     risk: { level: "低风险", tags: ["低风险", "低风险"] }
   }
 ];
