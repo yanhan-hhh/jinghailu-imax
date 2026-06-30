@@ -2,7 +2,7 @@
 // 数据来源：《影视综·短剧·漫剧IP信息与上映节奏报告（2026年06月26日）》
 // 厅别 hall：main=正片厅(热播/上映中) / chase=追更厅(连载中·即将开播) / classic=经典厅(已完结回看·短剧漫剧)
 // 媒介 media：国产剧 / 海外剧 / 院线电影 / 国漫番剧 / 短剧漫剧
-// status：热播中 / 上映中 / 连载中 / 即将开播 / 已完结 / 今日首发
+// status：热播中 / 上映中 / 连载中 / 即将开播 / 已完结 / 新剧首播
 
 // 最新报告日期（每日更新时改这里。用作归档/NEW 判断的数据基准）
 const REPORT_DATE = "2026-06-29";
@@ -60,11 +60,11 @@ const MOVIES = [
     risk: { level: "低风险", tags: ["无同性恋情节·低风险", "无血腥暴力·低风险"] }
   },
   {
-    id: 6, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "云秀行", media: "国产剧", hall: "main", status: "今日首发", today: true,
+    id: 6, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "云秀行", media: "国产剧", hall: "main", status: "新剧首播", today: true,
     genre: ["古装", "喜剧", "爱情"], hot: 85, rating: null,
     cast: "李一桐、曾舜晞、邓为、代露娃、王以纶", director: null,
     ipFrom: null,
-    release: "6月26日首播（今天！）", platform: "爱奇艺·优酷联播",
+    release: "6月26日首播", platform: "爱奇艺·优酷联播",
     summary: "古装喜剧爱情。在传说中的九城，名门望小范云远和白切黑城主彼此试探、相互信任，一路披荆斩棘携手民保科。阵容顶配但豆瓣云合仅3.3%遇冷。",
     guide: "优酷《云秀行》",
     risk: { level: "低风险", tags: ["无同性恋情节·低风险", "无血腥暴力·低风险"] }
@@ -80,12 +80,12 @@ const MOVIES = [
     risk: { level: "中风险", tags: ["无同性恋情节·低风险", "悬疑题材可能有惊悚元素·中风险"] }
   },
   {
-    id: 8, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "江云镇谜案", media: "国产剧", hall: "main", status: "今日首发", today: true,
+    id: 8, firstSeen:"2026-06-26", lastSeen:"2026-06-29", title: "江云镇谜案", media: "国产剧", hall: "main", status: "新剧首播", today: true,
     genre: ["民国探案"], hot: 68, rating: null,
     cast: null, director: null,
     ipFrom: null,
-    release: "6月26日定档（今天！）", platform: "爱奇艺",
-    summary: "今天上线的民国探案新剧，与《云秀行》同日上线，正面竞争。",
+    release: "6月26日定档", platform: "爱奇艺",
+    summary: "民国探案新剧，与《云秀行》同日上线，正面竞争。",
     guide: "爱奇艺搜索《江云镇谜案》",
     risk: { level: "中风险", tags: ["无同性恋情节·低风险", "探案题材有轻量凶杀元素·中风险"] }
   },
@@ -121,21 +121,21 @@ const MOVIES = [
     risk: { level: "低风险", tags: ["无同性恋情节·低风险", "无血腥暴力·低风险"] }
   },
   {
-    id: 12, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "金特务：本色回归", media: "海外剧", hall: "main", status: "今日首发", today: true,
+    id: 12, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "金特务：本色回归", media: "海外剧", hall: "main", status: "新剧首播", today: true,
     genre: ["动作", "谍战"], hot: 73, rating: null,
     cast: null, director: null,
     ipFrom: null,
-    release: "SBS金土剧 6月26日首播（今天！）", platform: "SBS",
-    summary: "动作谍战，今日首播。",
+    release: "SBS金土剧 6月26日首播", platform: "SBS",
+    summary: "动作谍战，SBS金土剧。",
     risk: { level: "中风险", tags: ["无同性恋情节·低风险", "动作谍战有部分战斗场面·中风险"] }
   },
   {
-    id: 13, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "末行手记", media: "海外剧", hall: "main", status: "今日首发", today: true,
+    id: 13, firstSeen:"2026-06-26", lastSeen:"2026-06-26", title: "末行手记", media: "海外剧", hall: "main", status: "新剧首播", today: true,
     genre: ["剧情"], hot: 66, rating: null,
     cast: null, director: null,
     ipFrom: null,
-    release: "6月26日上线（今天！）", platform: "Netflix",
-    summary: "Netflix最新剧情剧，今日上线。",
+    release: "6月26日上线", platform: "Netflix",
+    summary: "Netflix最新剧情剧。",
     risk: { level: "中风险", tags: ["可能涉及敏感情节·中风险", "视具体内容待定·中风险"] }
   },
   {
@@ -211,9 +211,9 @@ const MOVIES = [
     genre: ["体育竞技", "动画电影"], hot: 60, rating: null,
     cast: null, director: null,
     ipFrom: null,
-    release: "6月27日（明天！）", platform: "全国影院明日上映",
+    release: "6月27日上映", platform: "全国影院",
     summary: "紧抓2026美加墨世界杯热潮，讲述少年足球战队直面仿AI足球「天才」、逆袭登顶的燃爽故事。暑期档体育动画第一炮。",
-    guide: "全国影院明日上映 | 预告片",
+    guide: "全国影院上映 | 预告片",
     risk: { level: "低风险", tags: ["低风险", "低风险"] }
   },
 
@@ -979,10 +979,10 @@ const TIMELINE = [
   { date: "6月21日", title: "光阴之外 第二季", type: "国漫", platform: "优酷" },
   { date: "6月22日", title: "明天也要上班", type: "韩剧", platform: "tvN" },
   { date: "6月24日", title: "昨夜将至", type: "国产剧", platform: "爱奇艺迷雾" },
-  { date: "6月26日 (今天)", title: "云秀行", type: "国产剧", platform: "爱奇艺+优酷", today: true },
-  { date: "6月26日 (今天)", title: "江云镇谜案", type: "国产剧", platform: "爱奇艺", today: true },
-  { date: "6月26日 (今天)", title: "金特务/末行手记", type: "韩剧", platform: "SBS/Netflix", today: true },
-  { date: "6月27日 (明天)", title: "热血足球少年", type: "动画电影", platform: "院线", soon: true },
+  { date: "6月26日", title: "云秀行", type: "国产剧", platform: "爱奇艺+优酷", today: true },
+  { date: "6月26日", title: "江云镇谜案", type: "国产剧", platform: "爱奇艺", today: true },
+  { date: "6月26日", title: "金特务/末行手记", type: "韩剧", platform: "SBS/Netflix", today: true },
+  { date: "6月27日", title: "热血足球少年", type: "动画电影", platform: "院线", soon: true },
   { date: "7月", title: "死神 千年血战篇", type: "日本动画", platform: "即将开播", soon: true },
   { date: "7月", title: "正相反的你和我 第二季", type: "日本动画", platform: "即将开播", soon: true }
 ];
@@ -990,7 +990,7 @@ const TIMELINE = [
 // 下周值得关注
 const SPOTLIGHT = [
   "6月27日《热血足球少年·英雄初升》院线上映，世界杯年足球题材动画电影值得关注",
-  "《云秀行》今天刚开播，关注后续口碑发酵和云合数据走势",
+  "《云秀行》刚开播，关注后续口碑发酵和云合数据走势",
   "《南部档案》与《莫离》的榜首之争继续",
   "《龙之家族S3》口碑炸裂，关注后续剧集表现",
   "《铁拳教育》全球爆红，B站二创持续发酵",
